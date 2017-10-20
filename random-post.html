@@ -37,6 +37,12 @@ a:hover {color:#0379C4}
   text-align:right;
 }
 /* Style 2 */
+.related-post h4 {
+  font-size:20px;
+  margin:0 5px 10px;
+  font-weight:700;
+  text-align:right;
+}
 .related-post-style-2 {
   margin:0;
   padding:0;
@@ -110,7 +116,7 @@ var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
         numPosts: 20,
-        summaryLength: 100,
+        summaryLength: 0,
         widgetStyle: 2,
         callBack: function() {
             var $container = $('#' + this.containerId + ' > ul'),
